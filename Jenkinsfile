@@ -1,4 +1,4 @@
-10ddpipeline {
+pipeline {
     agent any
     stages {
       stage('Deploy New Tomcat Container') {
