@@ -1,6 +1,7 @@
 pipeline {
     agent any
-        stage('Deploy New Tomcat Container') {
+    stages {
+      stage('Deploy New Tomcat Container') {
             steps {
                 script {
                     // 1. Build the image (using the Docker socket to talk to host)
@@ -16,6 +17,3 @@ pipeline {
             }
         }
     }
-}
-
-
