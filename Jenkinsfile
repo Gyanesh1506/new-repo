@@ -13,7 +13,7 @@ pipeline {
                     if [ $(docker ps -aq -f name=my-tomcat-prod) ]; then
                         docker stop my-tomcat-prod || true
                         docker rm my-tomcat-prod
-			sleep 2
+			            sleep 2
                     fi
                     '''
                     
