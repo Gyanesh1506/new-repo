@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    stages {
-        stage('Checkout') {
-            steps { git 'https://github.com/Gyanesh1506/new-repo.git' }
-        }
         stage('Deploy New Tomcat Container') {
             steps {
                 script {
