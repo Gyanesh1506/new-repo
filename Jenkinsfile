@@ -18,7 +18,7 @@ pipeline {
                     '''
                     
                     // 3. Run new container
-                    sh "docker run -d --name my-tomcat-prod -p 8081:8080 my-app-tomcat:${env.BUILD_NUMBER}"
+                    sh "docker run -d --name my-tomcat-prod -p 8088:8080 my-app-tomcat:${env.BUILD_NUMBER}"
                 }
             }
         }
