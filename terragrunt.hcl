@@ -1,5 +1,5 @@
 terraform {
-    source = "E:/AWS_and_DevOps/Practice_terragrunt/resource"
+    source = "./resource"
 }
 inputs = {
   ec2_ami       = "ami-00a9f44477dd83e3d"
